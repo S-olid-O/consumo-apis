@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Consulta el clima actual de cualquier ciudad">
+    <title>ClimApp | Clima por ciudades</title>
+</head>
+<body>
+    <main class="contenedor">
+        <section class="encabezado" aria-labelledby="titulo">
+            <span class="marca">CLIMAPP</span>
+            <h1 id="titulo">El clima, de un vistazo.</h1>
+            <p>Consulta las condiciones actuales de cualquier ciudad.</p>
+        </section>
+
+        <form class="busqueda" autocomplete="off">
+            <label class="sr-only" for="ciudad">Ciudad</label>
+            <input id="ciudad" type="text" class="input-ciudad" placeholder="Busca una ciudad..." maxlength="80" required>
+            <button class="btn-buscar" type="submit">
+                <span>Buscar clima</span>
+                <span aria-hidden="true">&#8594;</span>
+            </button>
+        </form>
+
+        <section class="resultado" aria-live="polite" aria-atomic="true">
+            <div class="estado-inicial">
+                <span class="icono-clima" aria-hidden="true">&#9788;</span>
+                <p>Escribe una ciudad para comenzar</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="clima.js"></script>
+</body>
+</html>
