@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Moirai+One&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pokédex</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-content">
+        <div class="header-title-wrap">
+          <p class="eyebrow">Pokédex</p>
+          <h1 class="tipos">Pokémon</h1>
+        </div>
+
+        <label class="search-field" for="searchPokemon">
+          <span>Buscar</span>
+          <input
+            id="searchPokemon"
+            type="search"
+            placeholder="Nombre o #..."
+            aria-label="Buscar Pokémon"
+          />
+        </label>
+      </div>
+    </header>
+
+    <main>
+      <div id="todos">
+        <div class="pokemonTodos" id="listaPokemon"></div>
+      </div>
+    </main>
+
+    <script src="pokemon.js"></script>
+  </body>
+</html>
